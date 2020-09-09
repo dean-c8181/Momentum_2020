@@ -41,11 +41,12 @@ function paintToDo(text){       // todo인풋 입력시 작동
     const newId = toDos.length + 1;
     delBtn.innerText = '❌';
     delBtn.addEventListener('click', deleteToDo); // 삭제기능
-    span.innerText = text;
+    span.innerText = `${text}`;
+    //span.classList.add('fontStyle_nanumPen');
     li.appendChild(span);
     li.appendChild(delBtn);
     li.id = newId;
-    toDoList.appendChild(li);
+    toDoList.appendChild(li);    
 
     // localStorage 저장용작업
     const toDoObj = {

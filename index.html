@@ -5,22 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dean's Momentom</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="js-clock">
-        <h1>00:00</h1>
+    <div class="js-clock presentTime">
+        <h1 class="fontStyle_frdG">00:00</h1>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do">
-    </form>
-    <ul class="js-toDoList">
 
-    </ul>
-    <span class="js-weather"></span>
+    <section class="nameContainer">
+        <form class="js-form form">
+            <input type="text" class="enterForm" placeholder="What is your name" />
+        </form>
+        <h4 class="js-greetings greetings fontStyle_sgDay"></h4>
+    </section>
+    
+    <section class="todoContainder">
+        <form class="js-toDoForm">
+            <input type="text" class="enterForm" placeholder="Write a to do">
+        </form>
+        <ul class="js-toDoList fontStyle_nanumPen toDoList">    
+        </ul>
+    </section>
+    
+    <div class="weatherBox">
+        <div class="js-weather"></div>
+        <div class="js-weatherDetail"></div>
+        <div class="js-weatherDsctr weatherDsctr"></div>
+    </div>
 
     <script src="clock.js"></script>    
     <script src="greeting.js"></script>
